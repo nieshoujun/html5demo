@@ -1,0 +1,172 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Merriweather', "Microsoft YaHei",Segoe UI,Tahoma,Arial,Verdana,sans-serif;
+}
+canvas {
+    display: block;
+}
+
+#scores-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 460px;
+  /*background: transparent url(../images/scoring_background.png) 0 0 no-repeat;*/
+  background-size: 100% 100%;
+  padding: 12px;
+  background:rgba(255,255,255,0.6);
+  border-radius:10px;
+  display:none;
+}
+
+#mytable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-spacing: 0;
+  border: 1px solid #ace3f8;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*th {
+  border-top: 1px solid transparent;;
+}*/
+
+tr > td:first-child, tr > th:first-child {
+  /*border-left: 1px solid transparent;*/
+  width:70px;
+}
+
+tr > td:last-child, tr > th:last-child {
+  /*border-right: 1px solid transparent;*/
+  width: 50px;
+}
+
+tbody > tr:last-child > td {
+  /*border-bottom: 1px solid transparent;*/
+}
+
+#waiting-wrapper {
+  width:100%;
+  height:100%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+#waiting-zone {
+  width: 679px;
+  height: 326px;
+  padding: 150px 0 0 0px;
+  background: transparent url(../images/waiting_zone_bg.png) 0 0 no-repeat;
+}
+
+#getBowling{
+  height:auto;
+  margin-top:55px;
+}
+
+#qrCode {
+  width: 114px;
+  height: 114px;
+  background-position: center;
+  margin-right: 100px;
+  float:right;
+}
+
+#access{
+  clear:both;
+  text-align:center;
+  padding-top:55px;
+}
+
+#game-tip {
+  width:300px;
+  height:150px;
+  float:left;
+  margin-left:100px;
+  font-size:16px;
+}
+
+#login,#wait_user{
+  font-size:22px;
+  margin:0;
+  padding:0;
+  color: #ff5400;
+  font-family:微软雅黑;
+}
+
+#wait_user{
+  margin-top:5px;
+}
+
+#txt_two_dimensional{
+  margin:0;
+  padding:0;
+  font-size:16px;
+  color:#00779f;
+  margin-top:30px;
+  font-family:微软雅黑;
+}
+
+#main-message {
+  display: none;
+  width: 177px;
+  height: 90px;
+  padding: 65px 40px 30px 40px;
+  text-align: left;
+  color: white;
+  background: transparent url(../images/waiting_message_bg.png) 0 0 no-repeat;
+  box-shadow: 0 0 7px #555;
+  font-size: 18px;
+  border-radius: 10px;
+  background-size: cover;
+}
+.changeColor{
+  background-color:rgba(151,231,250,0.5);
+}
+#ending_wrapper{
+  color: #ff5400;
+  font-size:22px;
+  width:100%;
+  height:100%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+}
+#ending{
+  width: 436px;
+  height: 200px;
+  padding-top:100px;
+  margin:0 auto;
+  margin-top:200px;
+  /*box-shadow:0px 0px 10px #ccc;*/
+  background: transparent url(../images/ending.png) 0 0 no-repeat;
+}
+#text_end{
+  width:150px; 
+  height:150px;
+  margin:0 auto;
+}
+#name,#winner{
+  margin:0;
+  padding:0;
+}
